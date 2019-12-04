@@ -13,6 +13,7 @@ import { EditarComponent } from './notas/editar/editar.component';
 import { DetalhesComponent } from './notas/detalhes/detalhes.component';
 import { Routes,RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ResponderRoteiroComponent } from './roteiro/responder/responder.component';
 
 
 /*
@@ -30,7 +31,8 @@ const routes:Routes =[
     NovoComponent,
     EditarComponent,
     DetalhesComponent,
-    HomeComponent
+    HomeComponent,
+    ResponderRoteiroComponent
   ],
   imports: [
     BrowserModule,

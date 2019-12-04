@@ -3,12 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 
 //components
 import { HomeComponent } from './home/home.component';
+import { ResponderRoteiroComponent } from './roteiro/responder/responder.component';
 
 const routes: Routes = [
     {
 			path: 'home',			
 			component: HomeComponent
+		},
+    {
+			path: 'roteiro',			
+			component: ResponderRoteiroComponent
 		}
+
 
 ];
 
