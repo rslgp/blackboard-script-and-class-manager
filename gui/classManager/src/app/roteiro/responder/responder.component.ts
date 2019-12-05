@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'responder-roteiro',
   templateUrl: './responder.component.html',
   //styleUrls: [ './responderRoteiro.component.scss' ]
 })
