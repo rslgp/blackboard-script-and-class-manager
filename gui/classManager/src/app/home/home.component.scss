@@ -20,6 +20,9 @@
         .mat-tab-labels {
             flex-direction: column;
         }
+        .mat-tab-label {
+          border-radius: 20px;
+        }
         .mat-ink-bar {
             height: 100%;
             left: 98% !important;
