@@ -30,6 +30,11 @@
             height: 100%;
             left: 98% !important;
         }
+      
+        .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+            background-color: #98a4e87a;
+        }
+      
         .mat-tab-body-wrapper {
             flex: 1 1 auto;
         }
