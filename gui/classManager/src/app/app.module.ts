@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatIconModule, MatDividerModule, MatButtonModule } from '@angular/material';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotasComponent } from './notas/notas.component';
@@ -35,12 +36,12 @@ const routes:Routes =[
     ResponderRoteiroComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     MatTabsModule, MatIconModule, MatDividerModule, MatButtonModule,
     BrowserAnimationsModule, FormsModule
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
