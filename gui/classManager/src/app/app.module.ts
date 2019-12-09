@@ -15,6 +15,9 @@ import { DetalhesComponent } from './notas/detalhes/detalhes.component';
 import { Routes,RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ResponderRoteiroComponent } from './roteiro/responder/responder.component';
+import { CadastrarRoteiroComponent } from './roteiro/cadastrar/cadastrar.component';
+
+
 
 
 /*
@@ -33,7 +36,8 @@ const routes:Routes =[
     EditarComponent,
     DetalhesComponent,
     HomeComponent,
-    ResponderRoteiroComponent
+    ResponderRoteiroComponent,
+    CadastrarRoteiroComponent
   ],
   imports: [
     AppRoutingModule,

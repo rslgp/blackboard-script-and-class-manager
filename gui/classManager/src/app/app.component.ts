@@ -10,7 +10,10 @@ import { Component } from '@angular/core';
        routerLink="/home" name="Home">Home</a> |
 
     <a routerLinkActive="active"
-      routerLink="/roteiro" name="ResponderRoteiro">roteiro</a>
+      routerLink="/roteiro" name="ResponderRoteiro">roteiro</a> |
+
+   <a routerLinkActive="active"
+            routerLink="/cadastrar-roteiro" name="CadastrarRoteiro">cadastrar Roteiro</a>
 
     <router-outlet></router-outlet>
   </div>
