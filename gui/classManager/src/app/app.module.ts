@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule, MatIconModule, MatDividerModule, MatButtonModule } from '@angular/material';
 
-
+import {APP_BASE_HREF} from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NotasComponent } from './notas/notas.component';
@@ -41,7 +41,7 @@ const routes:Routes =[
     MatTabsModule, MatIconModule, MatDividerModule, MatButtonModule,
     BrowserAnimationsModule, FormsModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
