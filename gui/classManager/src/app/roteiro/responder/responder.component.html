@@ -20,26 +20,29 @@
       Roteiro de Requisitos
       <br><br>
       <mat-divider></mat-divider>
-      <div name="questao1" style="visibility:visible">
+      <div name="questao-1" *ngIf = "visibleQuestions[1]">
       1 - TEXTO ESCRITO PELO PROFESSOR PARA QUESTAO 1
       <br>
-      <textarea id="respostaAlunoQuestao1"></textarea>
+      <textarea id="respostaAlunoQuestao"></textarea>
       <br>
 
       <button mat-button style="background-color:orange; margin:5px">Não sei</button>
-      <button mat-button style="background-color:green;" (click)='nextQuestao($event)'>Confirmar</button>
+      <button mat-button style="background-color:green;" (click)='nextQuestao($event,1)'>Confirmar</button>
       <br><br>
 
-      <mat-divider></mat-divider>
-      <div name="questao2" style="visibility:hidden">
+      </div>
 
-        2 - TEXTO ESCRITO PELO PROFESSOR PARA QUESTAO 1
+
+      <mat-divider></mat-divider>
+      <div name="questao-2"  *ngIf = "visibleQuestions[2]">
+
+        2 - TEXTO ESCRITO PELO PROFESSOR PARA QUESTAO 2
         <br>
         <textarea id="respostaAlunoQuestao1"></textarea>
         <br>
 
         <button mat-button style="background-color:orange; margin:5px">Não sei</button>
-        <button mat-button style="background-color:green;">Confirmar</button>
+        <button mat-button style="background-color:green;" (click)='nextQuestao($event,2)'>Confirmar</button>
         <br><br>
       </div>
 
