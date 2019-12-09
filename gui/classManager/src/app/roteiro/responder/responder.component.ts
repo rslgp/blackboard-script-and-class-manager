@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './responder.component.html',
   //styleUrls: [ './responderRoteiro.component.scss' ]
 })
-export class ResponderRoteiroComponent  {
-  name = 'Angular 6';
+export class ResponderRoteiroComponent{
+
+  nextQuestao(parentDiv){
+    console.log(parentDiv);
+  }
 }
