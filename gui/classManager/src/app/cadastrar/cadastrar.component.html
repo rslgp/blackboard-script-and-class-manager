@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
+
+<div class="container">
+  <div id="content">
+    <div id="main-content">
+      !!IMPORTAR ROTEIRO ESCOLHIDO
+      <br>!!IMPORTAR QUESTOES DO ROTEIRO ESCOLHIDO
+
+      <br>
+      <br>
+      <br>!!TEMPLATE
+
+      <br>
+      <!-- template hard coded -->
+      <label> Título: <input value="Roteiro de Requisitos"/> </label>
+      <br><br>
+      <mat-divider></mat-divider>
+      <label> Questões <mat-icon style="float:right; margin:20px; font-size:35px; cursor:pointer;" (click)='adicionarNovaQuestao($event)'>add_box</mat-icon> </label>
+      <br>
+      <span id="ESTOUAQUI" *ngIf="aconteceuclick"> !!TELA adicionar uma nova questão </span>
+     <br>
+      <!-- <ng-container *ngIf="user | async; let user">
+      <div>
+        (numero) {{ questao.text }}
+        //if locked replace questao.text e textarea por <mat-icon>lock</mat-icon>
+      </div>
+      </ng-container> -->
+
+
+    </div>
+  </div>
+</div>
