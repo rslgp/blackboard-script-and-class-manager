@@ -1,5 +1,7 @@
 import { defineSupportCode } from 'cucumber';
-import { browser, $, element, ElementArrayFinder, by } from 'protractor';
+
+import { browser, $, element, ElementArrayFinder, by, protractor } from 'protractor';
+
 let chai = require('chai').use(require('chai-as-promised'));
 let expect = chai.expect;
 
@@ -15,15 +17,17 @@ defineSupportCode(function ({ Given, When, Then }) {
         await $("a[name='ResponderRoteiro']").click();
     })
 
-    When(/^I try to register the answer "([^\"]*)" "$/, async (answer) => {
-        await $("input[name='respostabox']").sendKeys(<string> answer);
+    When(/^I try to register the answer "([^\"]*)"$/, async (answer) => {
+        await $("textarea[id='respostaAlunoQuestao1']").sendKeys(<string> answer);
         await element(by.buttonText('Confirmar')).click();
     });
 
-    Then(/^I can see "([^\"]*)" with CPF "(\d*)" in the students list$/, async (name, cpf) => {
-        var allalunos : ElementArrayFinder = element.all(by.name('alunolist'));
-        await allalunos.filter(elem => pAND(sameCPF(elem,cpf),sameName(elem,name))).then
-                   (elems => expect(Promise.resolve(elems.length)).to.eventually.equal(1));
-    });
+   Then(/^I can see the question 2 at the Responder Roteiro page$/, async() =>{
+    (element(by.name('questao-2')).isDisplayed()).then( function(value) {
+        expect(value).to.be.true;
+
+    })
+        
+   });
 
 })
